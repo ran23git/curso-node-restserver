@@ -10,30 +10,16 @@ const usuariosGet = (req = request, res = response) => {
     });
 }
 
-const usuariosPost = (req, res = response) => {
-    res.json({msg: 'post API - controlador POST'});
-}
+const usuariosPost = (req, res = response) => {      res.json({msg: 'post API - controlador POST'});}
 
 const usuariosPut = (req, res = response) => {
-    const {id} = req.params;
-    res.json({msg: 'put API - controlador PUT',
-        id
-    });
+    const {id} = req.params;                         res.json({msg: 'put API - controlador PUT',        id    });
 }
     
-const usuariosPatch = (req, res = response) => {
-    res.json({msg: 'patch API - controlador PATCH'});
-}
+const usuariosPatch = (req, res = response) => {     res.json({msg: 'patch API - controlador PATCH'});}
 
-const usuariosDelete = (req, res = response) => {
-    res.json({msg: 'delete API - controlador DELETE'});
-}
+const usuariosDelete = (req, res = response) => {    res.json({msg: 'delete API - controlador DELETE'});}
 
 
 module.exports = {
-    usuariosGet,
-    usuariosPost,
-    usuariosPut,
-    usuariosPatch,
-    usuariosDelete
-}
+    usuariosGet,    usuariosPost,    usuariosPut,    usuariosPatch,    usuariosDelete}
